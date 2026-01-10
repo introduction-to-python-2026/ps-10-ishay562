@@ -2,8 +2,8 @@ from PIL import Image
 import numpy as np
 from scipy.signal import convolve2d
 
-def load_image(file_path):
-    img = Image.open(file_path)
+def load_image(file):
+    img = Image.open(file)
     
     img_array = np.array(img)
     return img_array
